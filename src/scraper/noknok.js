@@ -15,7 +15,7 @@ const getWeekMenu = async () => {
   const dom = new JSDOM(page);
   return Array.from(
     dom.window.document
-      .getElementsByClassName("restaurant-menu")[0]
+      .getElementsByClassName("restaurant-menu")[2]
       .getElementsByTagName("li")
   )
     .filter(el => el.className.match(/erm_section|erm_product/) != null)
@@ -34,7 +34,7 @@ const getWeekMenu = async () => {
         : acc[acc.length - 1]["food"].push({
             name: el.getElementsByClassName("erm_product_desc")[0].textContent,
             price: parseInt(el.getElementsByClassName("price")[0].textContent)
-          }) && acc;
-    }, []);
+          }) && acc
+    , [])
 
 export { RESTAURANT_ID, getWeekMenu };
