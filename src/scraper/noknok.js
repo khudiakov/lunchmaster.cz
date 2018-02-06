@@ -41,4 +41,5 @@ const getWeekMenu = async () => {
       []
     );
 };
+
 export { RESTAURANT_ID, getWeekMenu };

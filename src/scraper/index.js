@@ -5,8 +5,9 @@ import { Restaurant } from "../data/connectors";
 import * as Buddha from "./buddha";
 import * as Stopkova from "./stopkova";
 import * as JednaBasen from "./jednaBasen";
+import * as Noknok from "./noknok";
 
-const RESTAURANTS = [Buddha, Stopkova, JednaBasen];
+const RESTAURANTS = [Buddha, Stopkova, JednaBasen, Noknok];
 
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
