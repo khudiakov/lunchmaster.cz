@@ -11,7 +11,7 @@ const resolvers = {
           .gte(latitudeFrom)
           .lte(latitudeTo);
       }
-      return Restaurant.find({});
+      return [];
     }
   }
 };
