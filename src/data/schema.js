@@ -3,7 +3,12 @@ import resolvers from "./resolvers";
 
 const typeDefs = `
   type Query {
-    restaurants(longitude: Float, latitude: Float): [Restaurant]
+    restaurants(
+      longitudeFrom: Float 
+      longitudeTo: Float
+      latitudeFrom: Float 
+      latitudeTo: Float
+    ): [Restaurant]
   }
 
   type Position {
