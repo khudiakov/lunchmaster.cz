@@ -26,7 +26,9 @@ const getWeekMenu = async () => {
       ),
       food: el.textContent
         .split("\n")
-        .map(line => line.match(/\*\s+(?:VEG\s)?[^ ]+ ([^(]+)[^)]+\) (\d+)/))
+        .map(line =>
+          line.match(/\*\s+(?:VEG\s)?[^\s]+\s+([^(]+)[^)]+\)\s+(\d+)/)
+        )
         .filter(match => match != null)
         .map(match => ({ name: match[1], price: parseInt(match[2]) }))
     })
