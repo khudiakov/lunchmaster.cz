@@ -7,8 +7,9 @@ import * as Stopkova from "./stopkova";
 import * as JednaBasen from "./jednaBasen";
 import * as Noknok from "./noknok";
 import * as Gusto from "./gusto";
+import * as PivniOpice from "./pivniOpice";
 
-const RESTAURANTS = [Buddha, Stopkova, JednaBasen, Noknok, Gusto];
+const RESTAURANTS = [Buddha, Stopkova, JednaBasen, Noknok, Gusto, PivniOpice];
 
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
